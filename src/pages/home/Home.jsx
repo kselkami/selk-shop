@@ -6,14 +6,14 @@ import Contact from '../../components/contact/Contact'
 
 const Home = () => {
   return (
-    <div className=''>
-      <section className='w-full mt-6 mb-24 px-4 max-w-[1200px] mx-auto'>
+    <div className='flex flex-col gap-32'>
+      <section className='w-full mt-8 px-4 max-w-[1200px] mx-auto'>
         <Carousel />
       </section>
-      <section className='w-full mb-24 px-4 max-w-[1200px] mx-auto'>
+      <section className='w-full px-4 max-w-[1200px] mx-auto'>
         <FeaturedProducts type={'Featured'}/>
       </section>
-      <section className='w-full mb-24 px-4 max-w-[1200px] mx-auto'>
+      <section className='w-full px-4 max-w-[1200px] mx-auto'>
         <Categories/>
       </section>
       {/* <section className='w-full mb-6 px-4 max-w-[1200px] mx-auto'>

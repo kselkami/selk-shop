@@ -12,18 +12,18 @@ const Card = ({product, heightProp}) => {
         onMouseEnter={()=> setIsHovered(true)}
         onMouseLeave={()=> setIsHovered(false)}
         className='relative rounded-lg h-full flex flex-col gap-3'>
-            {product.isNew &&<span className='absolute z-[1] py-1 px-2 bg-slate-200 text-black top-2 left-2 rounded-md'>New Season</span>}
+            {product.isNew &&<span className='absolute z-[1] py-1 px-2 bg-pink-400 text-black top-2 left-2 rounded-md'>New Season</span>}
                 {isHovered? (
-                        <img className='h-full max-h-[300px] min-w-full object-cover rounded-lg' src={product.img2} alt={product.img2} />
+                        <img className='h-full max-h-[300px] min-w-full object-cover' src={product.img2} alt={product.img2} />
                     ) : (
-                        <img className='h-full max-h-[300px] object-cover rounded-lg' src={product.img} alt={product.img} />
+                        <img className='h-full max-h-[300px] object-cover' src={product.img} alt={product.img} />
                 )}
 
 
             <div className='flex flex-col gap-1 text-black pl-2'>
                 <h3 className='text-md mt-2'>{product.title}</h3>
                 <div className='flex gap-2'>
-                    <p className='text-md line-through text-red-300'>P {product.oldPrice}</p>
+                    <p className='text-md line-through text-pink-500'>P {product.oldPrice}</p>
                     <p className='text-xl font-bold'>P {product.price}</p>
                 </div>
             </div>
