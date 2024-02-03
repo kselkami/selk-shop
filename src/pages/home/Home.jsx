@@ -7,7 +7,7 @@ import Contact from '../../components/contact/Contact'
 const Home = () => {
   return (
     <div className='flex flex-col gap-32'>
-      <section className='w-full mt-8 px-4 max-w-[1200px] mx-auto'>
+      <section className='w-full mt-8 px-4 max-w-[1440px] mx-auto'>
         <Carousel />
       </section>
       <section className='w-full px-4 max-w-[1200px] mx-auto'>
